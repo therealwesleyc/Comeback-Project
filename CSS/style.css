@@ -165,6 +165,7 @@ section{
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+    animation: fadeBounce 5s infinite;
 }
 
 /*Animations*/
@@ -187,6 +188,7 @@ section{
     }
 
     40%{
-        transform: translateY(-20px)
+        opacity: 1;
+        transform: translateY(0)
     }
 }
