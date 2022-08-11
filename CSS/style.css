@@ -168,6 +168,33 @@ section{
     animation: fadeBounce 5s infinite;
 }
 
+/* Hamburger Menu*/
+.harmburger{
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 19;
+    cursor: pointer;
+    width: 20px;
+    background: none;
+    border: none;
+}
+
+.harmburger-top, .harmburger-middle, .harmburger-bottom{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0;
+    background: #fff;
+}
+
+.harmburger-middle{
+    transform: translateY(5px);
+}
+.harmburger-bottom{
+    transform: translateY(10px);
+}
+
 /*Animations*/
 @keyframes fadeInUp{
     0%{
@@ -230,4 +257,39 @@ footer ul li a{
 
 footer ul li a:hover{
     color: #aaa;
+}
+
+/* Media Queries*/
+
+@media(max-width: 960px){
+    /*Hide Desktop View Menu*/
+    .desktop-main-menu{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .section-inner{
+        bottom: 75px;
+        left: 20px;
+    }
+
+    .section-inner h2{
+        font-size: 40px;
+
+    }
+
+    footer ul li:first-child{
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    footer ul li{
+        margin-right: 15px;
+    }
+    .logo{
+        width: 150px;
+        margin: auto;
+    }
 }
