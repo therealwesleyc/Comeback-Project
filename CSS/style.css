@@ -81,10 +81,18 @@ ul{
 }
 
 section{
+    position: relative;
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-transform: uppercase;
+}
+
+.section-inner{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
 }
 
 /* Background Images*/
