@@ -189,6 +189,7 @@ section{
     top: 0;
     left: 0;
     background: #fff;
+    transition: all 0.5s;
 }
 
 .harmburger-middle{
@@ -214,6 +215,18 @@ section{
 .open .harmburger-bottom{
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
 
+}
+
+/*Overlay*/
+.overlay-show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    
 }
 /*Animations*/
 @keyframes fadeInUp{
