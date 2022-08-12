@@ -180,11 +180,14 @@ section{
     border: none;
 }
 
-.harmburger-top, .harmburger-middle, .harmburger-bottom{
+.harmburger-top, 
+.harmburger-middle, 
+.harmburger-bottom{
     position: absolute;
     width: 20px;
     height: 2px;
     top: 0;
+    left: 0;
     background: #fff;
 }
 
@@ -195,6 +198,23 @@ section{
     transform: translateY(10px);
 }
 
+/*Transition Hamburger to X when open*/
+.open{
+    transform: rotate(90deg);
+}
+
+.open .harmburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .harmburger-middle{
+    display:none;
+}
+
+.open .harmburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+
+}
 /*Animations*/
 @keyframes fadeInUp{
     0%{
