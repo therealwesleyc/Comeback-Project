@@ -298,7 +298,11 @@ section{
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center;
-    
+
+}
+
+.section-inner-center h3{
+    font-size: 100px;
 }
 /*Animations*/
 @keyframes fadeInUp{
