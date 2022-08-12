@@ -232,6 +232,26 @@ section{
 .stop-scrolling{
     overflow: hidden;
 }
+
+/*Hide Mobile Menu Elements*/
+.mobile-only{
+    display: none;
+}
+
+/*Mobile Menu*/
+.mobile-main-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    z-index: 4;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*Animations*/
 @keyframes fadeInUp{
     0%{
@@ -303,7 +323,12 @@ footer ul li a:hover{
     .desktop-main-menu{
         display: none;
     }
+    /*Show Mobile Menu Elements*/
+    .mobile-only{
+        display: block;
+    }
 }
+
 
 @media(max-width: 600px){
     .section-inner{
