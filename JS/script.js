@@ -12,23 +12,24 @@ function navToggle(){
     menu.classList.toggle('show-menu');
 }
 
-function countUp(){
-    counters.forEach((counter) => {
+function countUp() {
+    counters.forEach((counter) =>{
         counter.innerText = '0';
 
-        const updateCounter = () => {
-            //Get count target
+        const updateCounter = () =>{
             const target = +counter.getAttribute('data-target');
             //Get current counter value
             const c = +counter.innerText;
-
-            //Create increment
+            //Create Increment
             const increment = target / 100;
-
-            // If counter is less than target, add increment
-            if (c < target){
+            //Add increment
+            if(c < target){
+                //Set Counter Value
                 counter.innerText = `${Math.ceil(c + increment)}`;
+
+                setTimeout(updateCounter, 75);
             }
+
         };
         updateCounter();
     });
