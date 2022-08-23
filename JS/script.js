@@ -16,11 +16,11 @@ function navToggle() {
 
 function scrollPage(){
   const scrollPos = window.scrollY;
-  if(scrollPos > 90 && !scrollStarted){
+  if(scrollPos > 100 && !scrollStarted){
     countUp();
     scrollStarted = true;
   }
-  else if (scrollPos < 90 && scrollStarted){
+  else if (scrollPos < 100 && scrollStarted){
     reset();
     scrollStarted = false;
   }

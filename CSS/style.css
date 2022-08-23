@@ -425,24 +425,56 @@ footer ul li a:hover{
     .section-inner-center h3{
         font-size: 75px;
     }
+    .stats{
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .stats div h4{
+        font-weight: 10;
+        text-decoration: none;
+        font-size: 18px;
+        justify-content: space-between;
+    }
+    #stat1{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    #stat2{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    #stat3{
+        font-weight: 700;
+        font-size: 40px;
+    }
     
 }
 
 
 @media(max-width: 600px){
+    .stats{
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .stats div h4{
-        font-size: 20px;
+        font-weight: 10;
+        text-decoration: none;
+        font-size: 18px;
         justify-content: space-between;
     }
     #stat1{
-        justify-content: space-around;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 40px;
     }
     #stat2{
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 40px;
     }
     #stat3{
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 40px;
     }
     .section-inner{
         bottom: 75px;
