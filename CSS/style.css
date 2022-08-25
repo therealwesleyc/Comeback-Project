@@ -99,7 +99,7 @@ section{
 .section-inner h4{
     font-size: 22px;
     margin-bottom: 5px;
-    font-weight: 300;
+    font-weight: normal;
     animation: fadeInUp 0.5s ease-in-out;
 }
 
@@ -122,16 +122,17 @@ section{
 .section-b-falcon .section-inner h4{
     font-size: 22px;
     margin-bottom: 5px;
-    font-weight: 300;
+    font-weight: normal;
     animation: fadeInUp 0.5s ease-in-out;
 }
-.section-inner h2{
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    animation: fadeInUp 0.5s ease-in-out 0.2s;
-    animation-fill-mode: both; 
-    /*Stop from showing at animation start*/
+.section-inner-falcon9{
+    line-height: 30pt;
+    text-transform: none;
+    position: absolute;
+    bottom: 40%;
+    left: 150px;
+    max-width: 560px;
+    
 }
 /* Background Images*/
 .section-a{
@@ -140,6 +141,9 @@ section{
 
 .section-b-falcon{
     background-image: url('../www.spacex.com-images-g0g8kd/WebsiteF9Fairings_Lines_Desktop.webp');
+}
+.section-c-falcon{
+    background-image: url('../www.spacex.com-images-g0g8kd/WebsiteF9Fairings_Render_Desktop.webp');
 }
 
 .btn{
