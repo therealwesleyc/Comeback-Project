@@ -140,11 +140,21 @@ section{
 }
 
 .section-b-falcon{
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
     background-image: url('../www.spacex.com-images-g0g8kd/WebsiteF9Fairings_Lines_Desktop.webp');
 }
 .section-c-falcon{
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    opacity: 0;
     background-image: url('../www.spacex.com-images-g0g8kd/WebsiteF9Fairings_Render_Desktop.webp');
 }
+
+
 
 .btn{
     position: relative;

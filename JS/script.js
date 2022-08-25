@@ -2,10 +2,18 @@ const btn = document.getElementById('menu-btn');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
+const scrollAmount = -800;
+const imageChange = document.getElementById('.section-b-falcon9')
 let scrollStarted = false;
 
 btn.addEventListener('click', navToggle);
 document.addEventListener('scroll', scrollPage);
+window.addEventListener('scroll', (event) =>{
+ const { top } = imageChange.getBoundingClientRect();
+ if (top - window.innerHeight < scrollAmount) {
+    imageChange.style.opacity = 1;
+ }
+});
 
 function navToggle() {
     btn.classList.toggle('open');
@@ -13,6 +21,7 @@ function navToggle() {
     document.body.classList.toggle('stop-scrolling');
     menu.classList.toggle('show-menu');
 }
+
 
 function scrollPage(){
   const scrollPos = window.scrollY;
